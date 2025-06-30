@@ -6,7 +6,7 @@
 }:
 let
   lib = pkgs.lib;
-  python = pkgs.python39;
+  python = pkgs.python312;
   pythonDeps = (lib.attrValues (import ./python-deps.nix { inherit python; fetchurl = pkgs.fetchurl; }));
   pythonDepsDev = with python.pkgs; [
     pytest_6
