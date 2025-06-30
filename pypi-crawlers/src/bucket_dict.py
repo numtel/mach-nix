@@ -1,6 +1,6 @@
 import json
 import os
-from _sha256 import sha256
+from hashlib import sha256
 from collections import UserDict, OrderedDict
 
 
